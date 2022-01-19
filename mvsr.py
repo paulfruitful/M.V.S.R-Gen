@@ -1,29 +1,20 @@
 import random
 from colorama import Fore
+print(Fore.BLUE+""" 
+########################################################################################
 
-print(""" *************************  ***********    *************************
-         **************************              **********************************
-         ***********************************************************************************      
-         ***************************************************************************************
-         *             **************  M.V.S.R  GENERATOR ************************   ****************
-         ***********************************************************************************************  
-         *                   ######## CODED BY PAUL FRUITFUL #############            ********************
-         *                        /////  COLLAB WITH LORD CRYPTO HACKER//////        ***********************       
-         *             *    CONTACT ME AT +2348114483062               #           ***************************
-         *             ****************************                    #           ****************************
-         *             *               ####### For Educational Purposes ########### ****************************
-         *             *                                                     *************************************
-         **********************************************************************************************************
-         *             ******************************************************
+""")
+
+print(Fore.YELLOW+"[+]Created By Paul Fruitful")
+print(Fore.GREEN+"[+]Contact Me on whatsapp at +2348114483062")
+
+print(Fore.BLUE+""" 
 ##########################################################################################
-###################################################################################################
-               #################################################################
-                     ##############################################
 
 """)
 
 
-options=[Fore.BLUE+"1. MasterCard",Fore.BLUE+"2. VisaCard",Fore.BLUE+"3. Recharge Card",Fore.BLUE+"4. SSN"]
+options=[Fore.GREEN+"1. MasterCard",Fore.RED+"2. VisaCard",Fore.GREEN+"3. Recharge Card",Fore.RED+"4. SSN"]
 print("""Choose one of the options
 """)
 print(f"""{options[0]}
@@ -57,7 +48,7 @@ def generate_master():
     """)
     return
 if user=="1":
-    for i in range(150):
+    for i in range(1150):
         generate_master()
 
 def generate_visa():
@@ -81,7 +72,7 @@ def generate_visa():
     """)
     return
 if user=="2":
-    for i in range(150):
+    for i in range(1150):
         generate_visa()
 def rechargegen():
     recard1=random.randint(46564,49999)
@@ -107,7 +98,7 @@ if user=="3":
     rechargecard=input(Fore.GREEN+"Choose option:")
     print(rechargecard)
     if rechargecard=="1":
-        for i in range(101):
+        for i in range(1101):
             rechargegen()
 
 if user=="4":
