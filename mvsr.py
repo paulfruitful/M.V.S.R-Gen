@@ -36,7 +36,7 @@ def generate_master():
     output=print(f"Card number:{cardhead}-{cardbody}-{cardbody2}-{cardend}") 
     #Random dates for the cards
     dateday=random.randint(1,31)
-    dateyear=random.randint(1988,2025)
+    dateyear=random.randint(2022,2028)
     output2=print(f'Date:{dateday}/{dateyear}')
     #Random dates for the cvv
     cvv=random.randint(111,999)
@@ -60,7 +60,7 @@ def generate_visa():
     output=print(f"Card number:{cardhead}-{cardbody}-{cardbody2}-{cardend}") 
     #Random dates for the cards
     dateday=random.randint(1,31)
-    dateyear=random.randint(1988,2035)
+    dateyear=random.randint(2022,2020)
     output2=print(f'Date:{dateday}/{dateyear}')
     #Random dates for the cvv
     cvv=random.randint(111,999)
@@ -77,9 +77,8 @@ if user=="2":
 def rechargegen():
     recard1=random.randint(46564,49999)
     recard2=random.randint(75637,82289)
-    result=print(f"#200 Glo Card: 40931-{recard1}-{recard2}")
-    print(result)
-    return
+    print(f"#200 Glo Card: 40931-{recard1}-{recard2}")
+    
 
 def ssngen():
     ssn1=random.randint(29,99)
@@ -102,6 +101,6 @@ if user=="3":
             rechargegen()
 
 if user=="4":
-    for i in range(101):
+    for i in range(1101):
         ssngen()
 
