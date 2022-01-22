@@ -1,5 +1,7 @@
 import random
 from colorama import Fore
+import os
+
 print(Fore.BLUE+""" 
 ########################################################################################
 
@@ -14,7 +16,7 @@ print(Fore.BLUE+"""
 """)
 
 
-options=[Fore.GREEN+"1. MasterCard",Fore.RED+"2. VisaCard",Fore.GREEN+"3. Recharge Card",Fore.RED+"4. SSN"]
+options=[Fore.GREEN+"1. MasterCard",Fore.RED+"2. VisaCard",Fore.GREEN+"3. Recharge Card",Fore.RED+"4. SSN",Fore.RED+"5. Update The Tool"]
 print("""Choose one of the options
 """)
 print(f"""{options[0]}
@@ -25,7 +27,13 @@ print(f"""{options[2]}
 """)
 print(f"""{options[3]}
 """)
+print(f"""{options[4]}
+""")
 user=input(Fore.LIGHTYELLOW_EX+'Choose one option:')
+if user=="5":
+    os.system("""cd
+   git clone https://github.com/paulfruitful/M.V.S.R-Gen
+    """)
 
 def generate_master():
     #Card number
@@ -103,4 +111,3 @@ if user=="3":
 if user=="4":
     for i in range(1101):
         ssngen()
-
